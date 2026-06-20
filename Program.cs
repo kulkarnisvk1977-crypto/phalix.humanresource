@@ -24,7 +24,8 @@ if (builder.Environment.IsProduction())
 
 
 builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
-
+// Register AutoMapper and specify a type to disambiguate overloads
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
