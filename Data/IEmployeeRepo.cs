@@ -12,6 +12,6 @@ namespace HumanResource.Data
         Task<Employee> CreateEmployee(Employee employee);
         Task<Employee> UpdateEmployee(int id, Employee employee);
         Task<bool> DeleteEmployee(int id);
-        Task<IEnumerable<Employee>> GetEmployeesByDepartment(string department);
+        Task<IEnumerable<Employee>> GetEmployeesByDepartment(int department);
     }
 }

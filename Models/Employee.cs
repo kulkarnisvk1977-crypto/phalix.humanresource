@@ -13,7 +13,7 @@ namespace HumanResource.Models
         public string PhoneNumber { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime HireDate { get; set; }
-        public string Department { get; set; }
+        public int Department { get; set; }
         public string Position { get; set; }
         public decimal Salary { get; set; }
         public bool IsActive { get; set; }

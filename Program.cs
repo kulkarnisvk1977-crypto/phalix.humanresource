@@ -30,6 +30,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    PrepDb.PrepPopulation(app, builder.Environment.IsProduction());
     app.UseSwagger();
     app.UseSwaggerUI();
 

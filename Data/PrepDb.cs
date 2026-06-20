@@ -40,7 +40,8 @@ namespace HumanResource.Data
                         LastName = "Doe", Email = " ", 
                         DateOfBirth = new DateTime(1990, 1, 1), 
                         Position = "Software Engineer", 
-                        Salary = 60000 
+                        Salary = 60000, Department = 1, PhoneNumber = "123-456-7890", 
+                        HireDate = DateTime.Now, IsActive = true
                     },
                     new Models.Employee() { 
                         FirstName = "Jane", 
@@ -49,7 +50,11 @@ namespace HumanResource.Data
                         DateOfBirth = new DateTime(1985, 5, 15), 
                         Position = "Project Manager", 
                         Salary = 75000 
+                        , Department = 2, PhoneNumber = "987-654-3210",
+                        HireDate = DateTime.Now, IsActive = true
                     });
+
+                    context.SaveChanges();
             }        
         }    
     }

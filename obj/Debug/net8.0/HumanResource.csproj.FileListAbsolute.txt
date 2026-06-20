@@ -136,3 +136,4 @@ E:\AllProjects\phalix\HumanResource\obj\Debug\net8.0\refint\HumanResource.dll
 E:\AllProjects\phalix\HumanResource\obj\Debug\net8.0\HumanResource.pdb
 E:\AllProjects\phalix\HumanResource\obj\Debug\net8.0\HumanResource.genruntimeconfig.cache
 E:\AllProjects\phalix\HumanResource\obj\Debug\net8.0\ref\HumanResource.dll
+E:\AllProjects\phalix\HumanResource\obj\Debug\net8.0\HumanResource.sourcelink.json
