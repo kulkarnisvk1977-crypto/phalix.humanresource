@@ -1,12 +1,9 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace HumanResource.Models
+namespace HumanResource.Dtos
 {
-    public class Employee
+    public class EmployeeCreateDto
     {
-        [Key]
-        public int EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
