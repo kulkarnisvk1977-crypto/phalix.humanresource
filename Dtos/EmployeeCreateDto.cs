@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace HumanResource.Dtos
 {
     public class EmployeeCreateDto
