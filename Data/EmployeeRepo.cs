@@ -72,7 +72,7 @@ namespace HumanResource.Data
             return true;
         }
 
-        public async Task<IEnumerable<Employee>> GetEmployeesByDepartment(string department)
+        public async Task<IEnumerable<Employee>> GetEmployeesByDepartment(int department)
         {
             return await _context.Employees
                 .Where(e => e.Department == department)
