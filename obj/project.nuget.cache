@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z/qbaiilpvCFTGvkDh1/a1hOh3icFgRaG7DcFojs/zuQye3V01G9YGGIMvdaf4LL7IxXmRh93swNNLHXLu8dDQ==",
+  "dgSpecHash": "nZ54EJcW54Zw8K5vjfLj65KMBh/TnfZQoRLJKc7BS5m0X4F2IW/e+S8MpCWfZPIzIc+TnCxm8hlXkKu7zJmjng==",
   "success": true,
-  "projectFilePath": "E:\\AllProjects\\phalix\\HumanResource\\HumanResource.csproj",
+  "projectFilePath": "E:\\AllProjects\\Phalix\\HumanResource\\HumanResource.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\STANDUS\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\STANDUS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AllProjects\\phalix\\HumanResource\\HumanResource.csproj": {}
+    "E:\\AllProjects\\Phalix\\HumanResource\\HumanResource.csproj": {}
   },
   "projects": {
-    "E:\\AllProjects\\phalix\\HumanResource\\HumanResource.csproj": {
+    "E:\\AllProjects\\Phalix\\HumanResource\\HumanResource.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AllProjects\\phalix\\HumanResource\\HumanResource.csproj",
+        "projectUniqueName": "E:\\AllProjects\\Phalix\\HumanResource\\HumanResource.csproj",
         "projectName": "HumanResource",
-        "projectPath": "E:\\AllProjects\\phalix\\HumanResource\\HumanResource.csproj",
+        "projectPath": "E:\\AllProjects\\Phalix\\HumanResource\\HumanResource.csproj",
         "packagesPath": "C:\\Users\\STANDUS\\.nuget\\packages\\",
-        "outputPath": "E:\\AllProjects\\phalix\\HumanResource\\obj\\",
+        "outputPath": "E:\\AllProjects\\Phalix\\HumanResource\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\STANDUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

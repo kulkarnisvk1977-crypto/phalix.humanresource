@@ -23,8 +23,11 @@ namespace HumanResource.Data
 
         public async Task<Employee> GetEmployeeById(int id)
         {
+            
             var employee = await _context.Employees.FindAsync(id);
-            return employee ?? throw new InvalidOperationException($"Employee with id {id} not found.");
+            //return employee ?? throw new InvalidOperationException($"Employee with id {id} not found.");
+                    
+            return employee;
         }
 
         public async Task<Employee> CreateEmployee(Employee employee)

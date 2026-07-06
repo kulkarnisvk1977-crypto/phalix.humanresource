@@ -1,6 +1,7 @@
 using AutoMapper;
 using HumanResource.Data;
 using HumanResource.Dtos;
+using HumanResource.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HumanResource.Controller
@@ -30,35 +31,32 @@ namespace HumanResource.Controller
             return Ok(_mapper.Map<IEnumerable<EmployeeReadDto>>(employees));
         }
 
-        // [HttpGet("{id}")]
-        // public IActionResult Get(int id)
-        // {
-        //     var employee = _employeeRepo.GetById(id);
-        //     if (employee == null)
-        //     {
-        //         return NotFound();
-        //     }
-        //     var employeeDto = _mapper.Map<EmployeeReadDto>(employee);
-        //     return Ok(employeeDto);
-        // }
+        [HttpGet("{id}", Name = "GetEmployeeById")]
+        public async Task<ActionResult<EmployeeReadDto>> GetEmployeeById(int id)
+        {
+            var employee = await _employeeRepo.GetEmployeeById(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            //var employeeDto = _mapper.Map<EmployeeReadDto>(employee);
+            return Ok(_mapper.Map<EmployeeReadDto>(employee));
+        }
 
-        // [HttpPost]
-        // public IActionResult Create([FromBody] EmployeeCreateRequest request)
-        // {
-        //     if (request == null || string.IsNullOrWhiteSpace(request.Name))
-        //     {
-        //         return BadRequest("Invalid employee data.");
-        //     }
+        [HttpPost]
+        public async Task<ActionResult<EmployeeReadDto>> Create(EmployeeCreateDto request)
+        {
+            if (request == null || string.IsNullOrWhiteSpace(request.FirstName))
+            {
+                return BadRequest("Invalid employee data.");
+            }
 
-        //     var employee = new
-        //     {
-        //         Id = 1,
-        //         Name = request.Name,
-        //         Position = request.Position
-        //     };
-
-        //     return CreatedAtAction(nameof(Get), new { id = employee.Id }, employee);
-        // }
+            var newEmployee = _mapper.Map<Employee>(request);
+            await _employeeRepo.CreateEmployee(newEmployee);
+           
+            var employeeReadDto = _mapper.Map<EmployeeReadDto>(newEmployee);
+            return CreatedAtRoute(nameof(GetEmployeeById), new { id = employeeReadDto.EmployeeId }, employeeReadDto);
+        }
     }
 
     public class EmployeeCreateRequest
