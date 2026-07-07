@@ -17,7 +17,7 @@ if (builder.Environment.IsDevelopment())
 else if (builder.Environment.IsProduction())
 {
     builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionString")));
 }
 
 // 3. Register Custom Application Services
